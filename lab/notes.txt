@@ -1,0 +1,14 @@
+File: notes.txt
+Author: Zachary Liou
+Date created: 2016 July 13
+
+
+LAB NOTES
+
+
+- Using document.write() after the page has loaded will clear the page contents
+- To change the contents of a tag, use element.innerHTML
+	- to get an element use document.getElementById(element)
+
+
+End of file: notes.txt
