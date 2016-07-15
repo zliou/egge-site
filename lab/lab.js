@@ -12,13 +12,20 @@
     console.log("Hello world!");
 
     var input = {
-        "header": "Bananas!",
-        "test": "banana",
+        "header": "Hello!",
+        "test": "return",
     };
 
     // Get DOM elements
     var header = document.getElementById("header");
     var test = document.getElementById("test");
+
+    // TEST: getting nonexistent id
+    var none = document.getElementById("thisiddoesnotexist");
+    console.log("test: (control)");
+    console.log(test);
+    console.log("none: ");
+    console.log(none);
 
     // Set element values
     header.innerHTML = input.header;
@@ -27,7 +34,17 @@
     // Get file
     //readTextFile("file://input.txt");
 
-
+    //
+    //
+    //
+    //
+    //
+    // TODO: test "sections" in input JSON object
+    //
+    //
+    //
+    //
+    //
 
     /*
      * Functions
