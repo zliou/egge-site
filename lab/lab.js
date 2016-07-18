@@ -13,44 +13,41 @@
 
     var input = {
         "header": "Hello!",
-        "test": "return",
+        "slogan": "return",
         "desc": "This is a test!",
+        "sections": [
+            "Home",
+            "About",
+            "Testimonials",
+            "Gallery",
+            "Contact",
+        ],
     };
 
     // Get DOM elements
     var header = document.getElementById("header");
-    var test = document.getElementById("test");
+    var slogan = document.getElementById("slogan");
 
     // Set element values
     header.innerHTML = input.header;
-    test.innerHTML = input.test;
+    slogan.innerHTML = input.slogan;
 
 
     
     /*
      * Testing procedures go here
      */
-    var elems = [];
-    var getId;
-    var i = 0;
-    var idBase = "mult";
-
-    getId = document.getElementById(idBase + i);
-    while (getId) {
-        console.log(getId);
-        //elems.push(getId);
-        getId.innerHTML = input.desc + " " + i + "0"; 
-        ++i;
-        getId = document.getElementById(idBase + i);
-    }
-
-    var hello = document.getElementsByClassName("hello ");
-    console.log(hello);
-    for (i = 0; i < hello.length; ++i) {
-        hello[i].innerHTML = input.desc + " " + i;
+    var desc = document.getElementsByClassName("desc");
+    console.log(desc);
+    for (var i = 0; i < desc.length; ++i) {
+        desc[i].innerHTML = input.desc + " " + i;
     }
     
-
+    var sections = document.getElementsByClassName("section");
+    console.log(sections);
+    for (var i = 0; i < sections.length && i < input.sections.length; ++i) {
+        sections[i].innerHTML = input.sections[i];
+    }
 
 
 

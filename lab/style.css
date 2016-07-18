@@ -6,3 +6,19 @@
 #intro {
 	margin: 3vh 3vw;
 }
+
+.section-contaner {
+	max-height: 20vh;
+}
+
+.section {
+	margin: 1vh;
+	width: 12vw;
+	height: 10vh;
+	background: #232323;
+	color: white;
+	float: left;
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 8vh;
+}
