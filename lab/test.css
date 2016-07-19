@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #2e2e2e;
+}
+h1, h2 {
+	font-size: 4em;
+}
+p {
+	font-weight: 300;
+	color: #808080;
+}
+
+.section {
+	text-align: center;
+	height: 70vh;
+	width: 100vw;
+}
+
+/*test*/
+/*#fold {background: #f2f2f2;}
+*/#info {background: #f2f2f2;}
+
+.banner-container {
+	display: inline-block;
+	margin-top: 20vh;
+	
+}
+
+#app-icon {
+	float: left;
+	max-width: 15vw;
+	max-height: 15vw;
+	border-radius: 40px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name-container {
+	float: left;
+	margin-left: 5vw;
+}
+
+#author {
+	float: right;
+}
+
+.compliments {
+	margin-top: 10vh;
+}
