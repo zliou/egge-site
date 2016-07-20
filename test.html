@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="test.css">
+
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--mobile apps-->
+	<!--Custom Theme files -->
+<!-- 	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/swipebox.css"> -->
+	<!-- Custom Theme files -->
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script> 
+
+	<!--animate-->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+	<!--end-animate-->
+
+	<!-- start-smooth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!--//end-smooth-scrolling-->
+
+</head>
+<body>
+
+	<div class="section" id="fold">
+
+<!-- 		<div class="logo-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
+			<ul>
+				<li><a href="#"></a></li>
+				<li><a href="#" class="twitter"></a></li>
+				<li><a href="#" class="google"></a></li>
+				<li><a href="#" class="p"></a></li>
+			</ul>
+		</div>
+		 -->
+		<div class="banner-container">
+			<img id="app-icon"/>
+			<div class="name-container">
+				<!-- @input APP NAME -->
+				<h1 class="app"></h1>
+				<!-- @input AUTHOR -->
+				<h5 class="author" id="author"></h5>
+			</div>	
+		</div>
+
+		<div class="compliments">
+			<p id="slogan"></p>
+		</div>
+
+		<div class="top-nav">
+			<ul class="nav1">
+				<li class="active wow fadeInLeft animated menu">
+					<a href="#fold" class="scroll">Home</a>
+				</li>
+				<li class="wow fadeInLeft animated menu">
+					<a href="#info" class="scroll">Features</a>
+				</li>
+				<li class="wow fadeInRight animated menu">
+					<a href="#gallery" class="scroll">Gallery</a>
+				</li>
+				<li class="wow fadeInRight animated menu">
+					<a href="#contact" class="scroll">Contact Us</a>
+				</li>
+			</ul>
+			<!-- script-for-menu -->
+<!-- 				<script>
+			   $( "span.menu" ).click(function() {
+				 $( "ul.nav1" ).slideToggle( 300, function() {
+				 // Animation complete.
+				  });
+				 });
+			</script> -->
+			<!-- /script-for-menu -->
+	</div>		
+
+	<div class="section" id="info">
+
+		<div id="triangle"></div>
+		
+	</div>
+
+
+</body>
+
+<script type="text/javascript" src="test.js"></script>
+</html>

@@ -1,0 +1,141 @@
+/*
+ * File: test.css
+ * Author: Zachary Liou
+ * Date created: 2016 July 18
+ */
+
+
+
+/*
+ * General
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	color: #2e2e2e;
+}
+h1, h2 {
+	font-size: 4em !important;
+}
+p {
+	font-weight: 300;
+	color: #808080;
+}
+
+
+
+/*
+ * General content/class styles
+ */
+
+.section {
+	text-align: center;
+	height: 60vh;
+	width: 100vw;
+}
+
+/* Fold */
+
+#fold {
+	margin-top: 10vh;
+}
+
+.banner-container {
+	display: inline-block;
+}
+
+#app-icon {
+	float: left;
+	max-width: 15vw;
+	max-height: 15vw;
+	border-radius: 40px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name-container {
+	float: left;
+	margin-left: 5vw;
+}
+
+#author {
+	float: right;
+}
+
+.compliments {
+	margin-top: 7vh;
+}
+
+.top-nav {
+	margin-top: 5vh;
+	margin-bottom: 2vh; 
+	text-align: center;
+}
+
+.nav1 {
+	display: inline-block;
+}
+
+.menu {
+	float: left;
+	min-width: 7vw;
+/*	padding: 0 2vw;*/
+	margin: 0 1vw;
+	list-style: none;
+}
+
+li.menu {
+	 background: transparent;
+	 border: solid 2px #e2e2e2;
+	 border-radius: 5px
+}
+
+li.active {
+	background: #eee;
+}
+
+a.scroll {
+	text-decoration: none;
+	color: #595959;
+}
+
+
+
+/* Info */
+
+#info {
+	background: #f2f2f2;
+}
+
+
+
+/*
+ * Templating
+ */
+
+/*.social-icons ul li a {
+    width: 40px;
+    height: 40px;
+	background: url(images/img-sp.png) no-repeat -51px -2px;
+}
+.social-icons ul li a.twitter {
+    background-position: -3px -1px;
+}
+.social-icons ul li a.google {
+    background-position: -98px -1px;
+}
+.social-icons ul li a.p {
+    background-position: -145px -1px;
+}
+*/
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+	border-top: 5vh solid white;
+}

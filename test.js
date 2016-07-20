@@ -16,7 +16,7 @@
         "slogan": "Your favorite messaging apps, all in one.",
         "rating": 5,
         "downloads": 12345,
-        "icon": "../../Desktop/gratis.jpg",
+        "icon": "./gratis.jpg",
 
     };
 
@@ -24,15 +24,18 @@
     var appNames = document.getElementsByClassName("app");
     var authorHeader = document.getElementById("author");
     var slogan = document.getElementById("slogan");
+    var icon = document.getElementById("app-icon");
 
     // Set element values
     for (var i = 0; i < appNames.length; ++i) {
         appNames[i].innerHTML = data.app;
     }
     authorHeader.innerHTML = "by " + data.company;
+    
+    icon.setAttribute("src", data.icon);
 
     if (data.rating > 3.5) {
-        slogan.innerHTML += rating + " stars. ";
+        slogan.innerHTML += data.rating + " stars. ";
     }
 
     if (data.downloads > 10000000) {
@@ -40,7 +43,7 @@
     } else if (data.downloads > 1000000) {
         slogan.innerHTML += "Over one million downloads. ";
     } else if (data.downloads > 100000) {
-        slogan.innerHTML += "Over one hundred thousand downloads. ";
+        slogan.innerHTML += "Over 100,000 downloads. ";
     } else if (data.downloads > 10000) {
         slogan.innerHTML += "Over ten thousand downloads. ";
     }
