@@ -29,6 +29,28 @@ p {
 
 
 
+/* test */
+
+.dimmed {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 30vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.gif {
+	height: 30vh;
+	background-image: url("header.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 -10vh;
+}
+
+
 /*
  * General content/class styles
  */
@@ -104,12 +126,16 @@ a.scroll {
 }
 
 
+/* Gallery */
+
+#gallery {
+	background: #f2f2f2;
+}
+
+
 
 /* Info */
 
-#info {
-	background: #f2f2f2;
-}
 
 
 
@@ -138,4 +164,13 @@ a.scroll {
 	border-left: 50vw solid transparent;
 	border-right: 50vw solid transparent;
 	border-top: 5vh solid white;
+}
+
+#triangle2 {
+	width: 0;
+	height: 0;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+	border-bottom: 5vh solid white;
+	margin-top: -5vh;
 }

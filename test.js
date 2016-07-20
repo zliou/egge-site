@@ -17,7 +17,10 @@
         "rating": 5,
         "downloads": 12345,
         "icon": "./gratis.jpg",
-
+        "screens": [
+            "screens/screen1.jpg",
+            "screens/screen2.jpg",
+        ],
     };
 
     // Get DOM elements
