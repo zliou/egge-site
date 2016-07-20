@@ -64,7 +64,7 @@ p {
 /* Fold */
 
 #fold {
-	margin-top: 10vh;
+	margin-top: 5vh;
 }
 
 .banner-container {
@@ -113,7 +113,7 @@ p {
 li.menu {
 	 background: transparent;
 	 border: solid 2px #e2e2e2;
-	 border-radius: 5px
+	 border-radius: 0px
 }
 
 li.active {
@@ -128,14 +128,38 @@ a.scroll {
 
 /* Gallery */
 
-#gallery {
+#features {
 	background: #f2f2f2;
+	min-height: 80vh;
 }
 
+#features-header {
+	margin-top: 7vh;
+}
 
 
 /* Info */
 
+.feature {
+	padding-top: 5vh;
+}
+
+.feature-left {
+	margin-left: 50vw;
+}
+
+.feature-right {
+	margin-right: 50vw;
+}
+
+
+
+
+/* Contact */
+
+#contact {
+	background: #f2f2f2;
+}
 
 
 
