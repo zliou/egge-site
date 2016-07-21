@@ -28,21 +28,20 @@ img {
 	max-width: 500px;
 }
 
-.img-container {
-	float: left;
-}
-.text-container {
-	float: right;
-}
-.row-container {
-	display: inline;
-	background: gray;
-}
-#mid-text {
-	float: left;
-}	
-#mid-img {
-	float: right;
+p {
+	margin: 5em 0;	
+	padding: 0;
+	width: 80%;
 }
 
+#triangle {
+	width: 0;
+	height: 0;
+	border-top: 167px solid transparent;
+	border-right: 100px solid white;
+	border-bottom: 167px solid transparent;
+	position: absolute;
+	margin-left: 447px;
+	margin-top: -337px;
 
+}
