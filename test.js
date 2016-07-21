@@ -46,7 +46,8 @@
     var authorHeader = document.getElementById("author");
     var slogan = document.getElementById("slogan");
     var icon = document.getElementById("app-icon");
-    var features = document.getElementById("features-container");
+    var featuresText = document.getElementsByClassName("feature-text");
+    var featuresImage = document.getElementsByClassName("feature-images");
 
     // Set element values
     for (var i = 0; i < appNames.length; ++i) {
@@ -77,37 +78,12 @@
     /*
      * Generate features
      */
-    var leftSide = false;
-    for (var i = 0; i < data.features.length; ++i) {
-        var pos = i % 4;
-        var elem = "";
-/*
-        if (pos == 1 || pos == 3) {
-            elem += "<div style=\"float:left\">";
-        }*/
-        elem += "<p class=\"feature ";
-
-        if (pos == 0 || pos == 1) {
-            elem += "feature-right";
-        } else {
-            elem += "feature-left";
-        }
-        
-        elem += "\">" + data.features[i] + "</p>";
-/*
-        if (pos == 0 || pos == 2) {
-            elem += "</div>";
-            elem += "<div style=\"background:red;width:100px;height:100px;";
-            elem += "float:left; \"";
-            elem += "></div>";
-        }
-        */
-
-        features.innerHTML += elem;
-
-
+    var j = 0;
+    for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
+        featuresText[i].innerHTML += "<p>" + data.features[j++];
+        featuresText[i].innerHTML += "</p><p>" + data.features[j++];
+        featuresText[i].innerHTML += "</p>";
     }
-
 
 
     //
