@@ -22,3 +22,27 @@
 	text-align: center;
 	padding-top: 8vh;
 }
+
+img {
+	max-height: 500px;
+	max-width: 500px;
+}
+
+.img-container {
+	float: left;
+}
+.text-container {
+	float: right;
+}
+.row-container {
+	display: inline;
+	background: gray;
+}
+#mid-text {
+	float: left;
+}	
+#mid-img {
+	float: right;
+}
+
+

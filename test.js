@@ -72,21 +72,7 @@
 
     slogan.innerHTML += data.slogan;
 
-/*
 
-
-
-
-
-TODO: go to lab and put in pictures
-
-
-
-
-
-
-
-*/
 
     /*
      * Generate features
