@@ -19,14 +19,15 @@
         "features": [
             "No ads. Free to download and free to use.",
             "Unlimited free calls and messages to other Gratis users.",
+            "Unlimited free photo and video sharing with other Gratis users.",
             "Cheap international calls.",
             "Translate incoming messages into a language you understand.",
-            "Personalizable.",
             "Chat groups for all your friends. Free and unlimited.",
-            "Minimum bandwidth and battery usage.",
+            "Personalizable.",
             "Push notifications. Never miss an important call.",
+            "Minimum bandwidth and battery usage.",
         ],
-        "email": "app@gratislabs.com",
+        "email": "app@your-email-here.com",
         "phone": "858-585-8585",
         "icon": "./gratis.jpg",
     };
@@ -76,6 +77,8 @@
     var j = 0;
     for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
         featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
+        featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
+            + data.features[j++];
         featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
             + data.features[j++];
         featuresText[i].innerHTML += "</p>";
