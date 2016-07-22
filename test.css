@@ -25,6 +25,7 @@ h1, h2 {
 p {
 	font-weight: 300;
 	color: #808080;
+	font-size: 1.2em;
 }
 
 
@@ -129,7 +130,7 @@ a.scroll {
 
 #features {
 	background: #f2f2f2;
-	min-height: 280vh;
+	min-height: 180vh;
 }
 
 #features-header {
@@ -167,7 +168,7 @@ a.scroll {
 }
 
 .feature-entry {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	margin: 3vh 0;
 }
 
@@ -175,7 +176,12 @@ a.scroll {
 /* Contact */
 
 #contact {
+	height: 30vh;
+}
 
+#contact-header {
+	padding-top: 5vh;
+	padding-bottom: 3vh;
 }
 
 
@@ -225,5 +231,5 @@ a.scroll {
 	border-left: 50vw solid transparent;
 	border-right: 50vw solid transparent;
 	border-bottom: 5vh solid white;
-	margin-top: -7vh;
+	margin-top: -5vh;
 }

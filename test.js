@@ -50,6 +50,8 @@
     var icon = document.getElementById("app-icon");
     var featuresText = document.getElementsByClassName("feature-text");
     var featuresImage = document.getElementsByClassName("feature-image-container");
+    var contactName = document.getElementById("contact-name");
+    var contactInfo = document.getElementById("contact-info");
 
     // Set element values
     for (var i = 0; i < appNames.length; ++i) {
@@ -91,30 +93,10 @@
     for (var i = 0; i < featuresImage.length && i < generic.images.length; ++i) {
         featuresImage[i].innerHTML += "<img src=\"" + generic.images[i] + "\""
             + " class=\"feature-image\"" + "/>";
-        /*featuresImage[i].style.background = "url(\"" + generic.images[i] 
-            + "\");";*/
-        /*featuresImage[i].innerHTML += "<div style=\"background: " +
-            /+ "url('" + generic.images[i] 
-            + "');\"></div>";*/
     }
 
-
-
-    //
-    //
-    //
-    //
-    //
-    // TODO: test "sections" in input JSON object
-    //
-    //
-    //
-    //
-    //
-
-    /*
-     * Functions
-     */
+    contactName.innerHTML = data.company;
+    contactInfo.innerHTML = "<p>" + data.email + "</p><p>" + data.phone + "</p>";
 
 
 })();
