@@ -112,17 +112,6 @@
     function checkFlags() {
         if (hasKeyword || clicked || scrolled || mouseover) {
             CONFIDENCE = -1;
-            
-            if (hasKeyword) score.innerHTML += "KEYWORD ";
-            if (clicked) score.innerHTML += "CLICK ";
-            if (scrolled) score.innerHTML += "SCROLL ";
-            if (mouseover) score.innerHTML += "MOUSE_MOVE ";
-
-            // TEST - print confidence levels
-            score.innerHTML += "<br/>- - - - - - - -";
-            score.innerHTML += "<br/>CONFIDENCE: " + CONFIDENCE;
-            score.innerHTML += "<br/>THRESHOLD:  " + CONFIDENCE_THRESHOLD;
-
             return;
         }
 
@@ -148,7 +137,7 @@
         } else {
             console.log("This is NOT a clean mobile device.");
             // Do other stuff
-            document.getElementById("two").style.background = "#b30000";
+            // ...
         }
     }
 
@@ -186,13 +175,7 @@
             portrait = false;
             return;
         }
-        // DEBUG - display screen data
-        sizes.innerHTML = "screen width: " + screen.width
-            + "\nscreen height: " + screen.height
-            + "\n"
-            + "\nwindow width: " + window.innerWidth
-            + "\nwindow height: " + window.innerHeight + "\n";
-
+    
         // Calculate screen ratio
         var ratio = screen.width / screen.height;
 
@@ -237,11 +220,6 @@
 
 
     function handleClick(event) {
-        console.log("click:"
-            + "\nx: " + event.screenX 
-            + "\ny: " + event.screenY
-        );
-
         if (event.altKey || event.ctrlKey || event.metaKey) {
             // extra computer points
         }
