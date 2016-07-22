@@ -110,7 +110,6 @@
 
 
     function checkFlags() {
-    /*
         if (hasKeyword || clicked || scrolled || mouseover) {
             CONFIDENCE = -1;
             
@@ -126,7 +125,7 @@
 
             return;
         }
-*/
+
         if (hasGyro) CONFIDENCE += GYRO_CONF;
         if (rotated) CONFIDENCE += ROTATE_CONF;
         if (touched) CONFIDENCE += TOUCH_CONF;
@@ -134,27 +133,6 @@
         if (isCharging) CONFIDENCE += CHARGING_CONF;
         if (!hasCommonScreenSize) CONFIDENCE += SCREEN_CONF; // note the !
         if (portrait) CONFIDENCE += PORTRAIT_CONF;
-        
-        // Print flag info (for testing)
-        if (hasGyro) score.innerHTML                += "<br/>GYRO_CONF:    " + GYRO_CONF;
-        else score.innerHTML += "<br/>no gyro ";
-        if (rotated) score.innerHTML                += "<br/>ROTATE_CONF   " + ROTATE_CONF;
-        else score.innerHTML += "<br/>no rotation ";
-        if (touched) score.innerHTML                += "<br/>TOUCH_CONF    " + TOUCH_CONF;
-        else score.innerHTML += "<br/>no touch ";
-        if (hasBattery) score.innerHTML             += "<br/>BATTERY_CONF  " + BATTERY_CONF;
-        else score.innerHTML += "<br/>no battery ";
-        if (isCharging) score.innerHTML             += "<br/>CHARGING_CONF " + CHARGING_CONF;
-        else score.innerHTML += "<br/>no charge state ";
-        if (!hasCommonScreenSize) score.innerHTML   += "<br/>SCREEN_CONF   " + SCREEN_CONF;
-        else score.innerHTML += "<br/>no uncommon screen size ";
-        if (portrait) score.innerHTML               += "<br/>PORTRAIT_CONF " + PORTRAIT_CONF;
-        else score.innerHTML += "<br/>no portrait orientation ";
-
-        // TEST - print confidence levels
-        score.innerHTML += "<br/>- - - - - - - -";
-        score.innerHTML += "<br/>CONFIDENCE:   " + CONFIDENCE;
-        score.innerHTML += "<br/>THRESHOLD:    " + CONFIDENCE_THRESHOLD;
 
         return;
     }
