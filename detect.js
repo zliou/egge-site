@@ -17,7 +17,7 @@
      */
 
      // Redirect vars
-     var REDIRECT_DESTINATION = "http://ads.themobilegames.net/click/8qM1cKZyq2?s2=6oo6";
+     var REDIRECT_DESTINATION = "http://imageandcolors.com/";
 
     // Detection vars
     var TIME_LIMIT  = 300;
