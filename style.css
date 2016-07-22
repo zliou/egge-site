@@ -29,14 +29,14 @@ p {
 }
 
 #one {
-	display: none;
+	display: block;
 	background: #006600
 	color: white;
 	font-weight: 3em;
 }
 
 #two {
-	display: block;
+	display: none;
 }
 
 

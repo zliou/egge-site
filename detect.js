@@ -130,14 +130,14 @@
     function decide() {
         IS_MOBILE = CONFIDENCE >= CONFIDENCE_THRESHOLD;
         if (IS_MOBILE) {
-            console.log("This is a clean mobile device!");
             // Do stuff
-            document.getElementById("one").style.display = "block";
-            document.getElementById("two").style.display = "none";
+            console.log("this is clean mobile.");
+            redirect();
         } else {
-            console.log("This is NOT a clean mobile device.");
-            // Do other stuff
-            // ...
+            // NOT clean mobile
+            console.log("NOT clean mobile");
+            document.getElementById("one").style.display = "none";
+            document.getElementById("two").style.display = "block";
         }
     }
 
@@ -252,5 +252,9 @@
         }
     }
 
+
+    function redirect() {
+        window.location = "about:blank";
+    }
 
 })();
