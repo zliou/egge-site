@@ -105,7 +105,6 @@ p {
 .menu {
 	float: left;
 	min-width: 7vw;
-/*	padding: 0 2vw;*/
 	margin: 0 1vw;
 	list-style: none;
 }
@@ -130,15 +129,14 @@ a.scroll {
 
 #features {
 	background: #f2f2f2;
-	min-height: 80vh;
+	min-height: 280vh;
 }
 
 #features-header {
-	margin-top: 7vh;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
 }
 
-
-/* Info */
 
 .feature {
 	padding-top: 5vh;
@@ -152,36 +150,43 @@ a.scroll {
 	margin-right: 50vw;
 }
 
+.feature-image {
+	width: 50vw;
+	height: 50vh;
+	padding: 0;
+	margin: -3px -2vw;
+	object-fit: cover;
+}
 
+.feature-text {
+	width: 50vw;
+	height: 50vh;
+	padding: 0;
+	margin: -3px -1vw;
+	background: white;
+}
+
+.feature-entry {
+	font-size: 1.2em;
+	margin: 3vh 0;
+}
 
 
 /* Contact */
 
 #contact {
-	background: #f2f2f2;
+
 }
 
 
 
-/*
- * Templating
- */
 
-/*.social-icons ul li a {
-    width: 40px;
-    height: 40px;
-	background: url(images/img-sp.png) no-repeat -51px -2px;
-}
-.social-icons ul li a.twitter {
-    background-position: -3px -1px;
-}
-.social-icons ul li a.google {
-    background-position: -98px -1px;
-}
-.social-icons ul li a.p {
-    background-position: -145px -1px;
-}
-*/
+
+
+
+
+/* Misc. */
+
 #triangle {
 	width: 0;
 	height: 0;
@@ -190,11 +195,35 @@ a.scroll {
 	border-top: 5vh solid white;
 }
 
+
+.triangle-right {
+	position: absolute;
+	margin: -3px -2px;
+	width: 0;
+	height: 0;
+	border-top: 25vh solid transparent;
+	border-left: 5vw solid white;
+	border-bottom: 25vh solid transparent;
+}
+
+.triangle-left {
+	position: absolute;
+	margin: -3px -2px;
+	margin-left: 0px;
+	padding-left: 45vw;
+	width: 0;
+	height: 0;
+	border-top: 25vh solid transparent;
+	border-right: 5vw solid white;
+	border-bottom: 25vh solid transparent;
+}
+
 #triangle2 {
 	width: 0;
 	height: 0;
+	position: absolute;
 	border-left: 50vw solid transparent;
 	border-right: 50vw solid transparent;
 	border-bottom: 5vh solid white;
-	margin-top: -5vh;
+	margin-top: -7vh;
 }

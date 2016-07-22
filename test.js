@@ -38,6 +38,8 @@
     var generic = {
         "images": [
             "images/1.jpg",
+            "images/2.jpg",
+            "images/3.jpg",
         ],
     }
 
@@ -47,7 +49,7 @@
     var slogan = document.getElementById("slogan");
     var icon = document.getElementById("app-icon");
     var featuresText = document.getElementsByClassName("feature-text");
-    var featuresImage = document.getElementsByClassName("feature-images");
+    var featuresImage = document.getElementsByClassName("feature-image-container");
 
     // Set element values
     for (var i = 0; i < appNames.length; ++i) {
@@ -80,10 +82,22 @@
      */
     var j = 0;
     for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
-        featuresText[i].innerHTML += "<p>" + data.features[j++];
-        featuresText[i].innerHTML += "</p><p>" + data.features[j++];
+        featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
+        featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
+            + data.features[j++];
         featuresText[i].innerHTML += "</p>";
     }
+
+    for (var i = 0; i < featuresImage.length && i < generic.images.length; ++i) {
+        featuresImage[i].innerHTML += "<img src=\"" + generic.images[i] + "\""
+            + " class=\"feature-image\"" + "/>";
+        /*featuresImage[i].style.background = "url(\"" + generic.images[i] 
+            + "\");";*/
+        /*featuresImage[i].innerHTML += "<div style=\"background: " +
+            /+ "url('" + generic.images[i] 
+            + "');\"></div>";*/
+    }
+
 
 
     //
