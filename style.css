@@ -30,7 +30,9 @@ p {
 
 #one {
 	display: none;
-	background: #006600;
+	background: #006600
+	color: white;
+	font-weight: 3em;
 }
 
 #two {
