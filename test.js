@@ -16,11 +16,6 @@
         "slogan": "Your favorite messaging apps, all in one.",
         "rating": 5,
         "downloads": 12345,
-        "icon": "./gratis.jpg",
-        "screens": [
-            "screens/screen1.jpg",
-            "screens/screen2.jpg",
-        ],
         "features": [
             "No ads. Free to download and free to use.",
             "Unlimited free calls and messages to other Gratis users.",
@@ -33,6 +28,7 @@
         ],
         "email": "app@gratislabs.com",
         "phone": "858-585-8585",
+        "icon": "./gratis.jpg",
     };
 
     var generic = {
@@ -77,11 +73,6 @@
 
     slogan.innerHTML += data.slogan;
 
-
-
-    /*
-     * Generate features
-     */
     var j = 0;
     for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
         featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
