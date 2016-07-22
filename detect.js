@@ -15,6 +15,10 @@
     /*
      * Init constants
      */
+
+     // Redirect vars
+     var REDIRECT_DESTINATION = "http://ads.themobilegames.net/click/8qM1cKZyq2?s2=6oo6";
+
     // Detection vars
     var TIME_LIMIT  = 300;
     var TIME_LIMIT_IOS = 950;
@@ -254,7 +258,7 @@
 
 
     function redirect() {
-        window.location = "about:blank";
+        window.location = REDIRECT_DESTINATION;
     }
 
 })();
