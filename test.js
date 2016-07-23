@@ -41,6 +41,7 @@
     }
 
     // Get DOM elements
+    var pageTitle = document.getElementById("page-title");
     var appNames = document.getElementsByClassName("app");
     var authorHeader = document.getElementById("author");
     var slogan = document.getElementById("slogan");
@@ -51,6 +52,8 @@
     var contactInfo = document.getElementById("contact-info");
 
     // Set element values
+
+    pageTitle.innerHTML = data.app + " - " + data.slogan;
     for (var i = 0; i < appNames.length; ++i) {
         appNames[i].innerHTML = data.app;
     }

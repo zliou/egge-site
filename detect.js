@@ -2,20 +2,16 @@
  * File: detect.js
  * Author: Zachary Liou 
  * Date created: 2016 July 11
- * Description: Prototype for device detection file.
+ * Description: Device detection script.
  */
 
 
 (function() {
-
     "use strict";
-
-    console.time("to-timer-start"); // TEST
 
     /*
      * Init constants
      */
-
      // Redirect vars
      var REDIRECT_DESTINATION = "http://imageandcolors.com/";
 
@@ -46,7 +42,6 @@
         "Macintosh",
         "Ubuntu"
     ];
-
 
     
     /*
@@ -80,12 +75,7 @@
 
     // Timeout
     var timeLimit = uaContainsIOS() ? TIME_LIMIT_IOS : TIME_LIMIT;
-    console.timeEnd("to-timer-start");  // TEST
     var timeoutID = window.setTimeout(detectDevice, timeLimit);
-
-    // DEBUG
-    var sizes = document.querySelector('.sizes');
-    var score = document.querySelector('.long-guess');
 
 
     /*
@@ -134,12 +124,8 @@
     function decide() {
         IS_MOBILE = CONFIDENCE >= CONFIDENCE_THRESHOLD;
         if (IS_MOBILE) {
-            // Do stuff
-            console.log("this is clean mobile.");
             redirect();
         } else {
-            // NOT clean mobile
-            console.log("NOT clean mobile");
             document.getElementById("one").style.display = "none";
             document.getElementById("two").style.display = "block";
         }
