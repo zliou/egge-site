@@ -29,7 +29,7 @@
         ],
         "email": "app@your-email-here.com",
         "phone": "858-585-8585",
-        "icon": "./gratis.webp",
+        "icon": "gratis.webp",
     };
 
     var generic = {
@@ -52,48 +52,66 @@
     var contactInfo = document.getElementById("contact-info");
 
     // Set element values
+    makeBanner();
+    makeSlogan();
+    makeFeatures();
+    showContactInfo();
 
-    pageTitle.innerHTML = data.app + " - " + data.slogan;
-    for (var i = 0; i < appNames.length; ++i) {
-        appNames[i].innerHTML = data.app;
-    }
-    authorHeader.innerHTML = "by " + data.company;
-    
-    icon.setAttribute("src", data.icon);
 
-    if (data.rating > 3.5) {
-        slogan.innerHTML += data.rating + " stars. ";
-    }
 
-    if (data.downloads > 10000000) {
-        slogan.innerHTML += "Over ten million downloads. ";
-    } else if (data.downloads > 1000000) {
-        slogan.innerHTML += "Over one million downloads. ";
-    } else if (data.downloads > 100000) {
-        slogan.innerHTML += "Over 100,000 downloads. ";
-    } else if (data.downloads > 10000) {
-        slogan.innerHTML += "Over ten thousand downloads. ";
-    }
 
-    slogan.innerHTML += data.slogan;
+    /*
+     * Functions
+     */
 
-    var j = 0;
-    for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
-        featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
-        featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
-            + data.features[j++];
-        featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
-            + data.features[j++];
-        featuresText[i].innerHTML += "</p>";
+    function makeBanner() {
+        pageTitle.innerHTML = data.app + " - " + data.slogan;
+        for (var i = 0; i < appNames.length; ++i) {
+            appNames[i].innerHTML = data.app;
+        }
+        authorHeader.innerHTML = "by " + data.company;
+        
+        icon.setAttribute("src", data.icon);
     }
 
-    for (var i = 0; i < featuresImage.length && i < generic.images.length; ++i) {
-        featuresImage[i].innerHTML += "<img src=\"" + generic.images[i] + "\""
-            + " class=\"feature-image\"" + "/>";
+    function makeSlogan() {
+        if (data.rating > 3.5) {
+            slogan.innerHTML += data.rating + " stars. ";
+        }
+
+        if (data.downloads > 10000000) {
+            slogan.innerHTML += "Over ten million downloads. ";
+        } else if (data.downloads > 1000000) {
+            slogan.innerHTML += "Over one million downloads. ";
+        } else if (data.downloads > 100000) {
+            slogan.innerHTML += "Over 100,000 downloads. ";
+        } else if (data.downloads > 10000) {
+            slogan.innerHTML += "Over ten thousand downloads. ";
+        }
+
+        slogan.innerHTML += data.slogan;
     }
 
-    contactName.innerHTML = data.company;
-    contactInfo.innerHTML = "<p>" + data.email + "</p><p>" + data.phone + "</p>";
+    function makeFeatures() {
+        var j = 0;
+        for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
+            featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
+            featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
+                + data.features[j++];
+            featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
+                + data.features[j++];
+            featuresText[i].innerHTML += "</p>";
+        }
 
+        for (var i = 0; i < featuresImage.length && i < generic.images.length; ++i) {
+            featuresImage[i].innerHTML += "<img src=\"" + generic.images[i] + "\""
+                + " class=\"feature-image\"" + "/>";
+        }
+    }
+
+    function showContactInfo() {
+        contactName.innerHTML = data.company;
+        contactInfo.innerHTML = "<p>" + data.email + "</p><p>" + data.phone + "</p>";
+    }
 
 })();
