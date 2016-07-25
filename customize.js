@@ -30,7 +30,7 @@
         ],
         "email": "app@your-email-here.com",
         "phone": "858-585-8585",
-        "icon": "gratis.webp",
+        "icon": "gratis.jpg",
     };
 
     var generic = {
