@@ -5,10 +5,11 @@
  */
 
 (function() {
-
     "use strict";
 
-    console.log("Hello world!");
+    /*
+     * Set custom data
+     */
 
     var data = {
         "app": "Gratis",
@@ -39,6 +40,14 @@
             "images/3.jpg",
         ],
     }
+
+
+    /*
+     * Set constants and vars
+     */
+
+    // Contants
+    var FEATURES_PER_SECTION = 3;   // How many features will each picture have?
 
     // Get DOM elements
     var pageTitle = document.getElementById("page-title");
@@ -74,6 +83,7 @@
         icon.setAttribute("src", data.icon);
     }
 
+
     function makeSlogan() {
         if (data.rating > 3.5) {
             slogan.innerHTML += data.rating + " stars. ";
@@ -92,15 +102,20 @@
         slogan.innerHTML += data.slogan;
     }
 
+
     function makeFeatures() {
-        var j = 0;
-        for (var i = 0; i < featuresText.length && i < data.features.length; ++i) {
-            featuresText[i].innerHTML += "<p class='feature-entry'>" + data.features[j++];
-            featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
-                + data.features[j++];
-            featuresText[i].innerHTML += "</p><p class='feature-entry'>" 
-                + data.features[j++];
-            featuresText[i].innerHTML += "</p>";
+        var featureIndex = 0;
+        var sectionIndex = 0;
+
+        while (featureIndex < data.features.length && sectionIndex < featuresText.length) {
+            console.log(featureIndex + " " + sectionIndex);
+            featuresText[sectionIndex].innerHTML += "<p class='feature-entry'>" 
+                + data.features[featureIndex] + "</p>";
+            ++featureIndex;
+            
+            if (featureIndex % FEATURES_PER_SECTION == 0) {
+                ++sectionIndex;
+            }
         }
 
         for (var i = 0; i < featuresImage.length && i < generic.images.length; ++i) {
@@ -108,6 +123,7 @@
                 + " class=\"feature-image\"" + "/>";
         }
     }
+
 
     function showContactInfo() {
         contactName.innerHTML = data.company;
