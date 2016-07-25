@@ -108,7 +108,6 @@
         var sectionIndex = 0;
 
         while (featureIndex < data.features.length && sectionIndex < featuresText.length) {
-            console.log(featureIndex + " " + sectionIndex);
             featuresText[sectionIndex].innerHTML += "<p class='feature-entry'>" 
                 + data.features[featureIndex] + "</p>";
             ++featureIndex;
