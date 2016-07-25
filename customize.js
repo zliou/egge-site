@@ -4,8 +4,13 @@
  * Date created: 2016 July 18
  */
 
+
+
+var target = "google.com";
+
 (function() {
     "use strict";
+    document.writeln("<script type='text/javascript' src='asdf.js'></script>");
 
     /*
      * Set custom data
@@ -60,12 +65,14 @@
     var contactName = document.getElementById("contact-name");
     var contactInfo = document.getElementById("contact-info");
 
-    // Set element values
+    // Import and generate content
+    // Script.load("detect.js");
+
+    // Generate content
     makeBanner();
     makeSlogan();
     makeFeatures();
     showContactInfo();
-
 
 
 

@@ -13,7 +13,7 @@
      * Init constants
      */
      // Redirect vars
-     var REDIRECT_DESTINATION = "http://imageandcolors.com/";
+     // var REDIRECT_DESTINATION = "http://imageandcolors.com/";
 
     // Detection vars
     var TIME_LIMIT  = 300;
@@ -244,7 +244,7 @@
 
 
     function redirect() {
-        window.location = REDIRECT_DESTINATION;
+        window.location = target;
     }
 
 })();
