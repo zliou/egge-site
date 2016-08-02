@@ -17,25 +17,25 @@ var target = "google.com";
      */
 
     var data = {
-        "app": "Gratis",
-        "company": "Gratis Labs",
-        "slogan": "Your favorite messaging apps, all in one.",
-        "rating": 5,
-        "downloads": 12345,
+        "app": "Egge",
+        "company": "Egge",
+        "slogan": "Bringing people together.",
+        "rating": 0,
+        "downloads": 0,
         "features": [
-            "No ads. Free to download and free to use.",
-            "Unlimited free calls and messages to other Gratis users.",
-            "Unlimited free photo and video sharing with other Gratis users.",
-            "Cheap international calls.",
-            "Translate incoming messages into a language you understand.",
-            "Chat groups for all your friends. Free and unlimited.",
+            "Instantaneous. Create events here and now.",
+            "Social. Invite entire groups of friends with one tap.",
+            "Visual. See the events nearest to you on a map",
+            "Rating system, so you know you'll have a good time.",
+            "Comment system for chatting.",
+            "Organized. Never lose track of an event in a newsfeed.",
+            "Guest list for easy tracking",
             "Personalizable.",
-            "Push notifications. Never miss an important call.",
-            "Minimum bandwidth and battery usage.",
+            "Push notifications.",
         ],
-        "email": "app@your-email-here.com",
+        "email": "support@eggeapp.com",
         "phone": "858-585-8585",
-        "icon": "gratis.jpg",
+        "icon": "egge.png",
     };
 
     var generic = {
