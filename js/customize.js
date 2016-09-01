@@ -9,7 +9,6 @@
 
     "use strict";
 
-
     console.log("Hello world!");
 
     var ci = {      // "Custom input"
