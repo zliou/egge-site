@@ -28,20 +28,6 @@ p {
 	font-size: 1.2em;
 }
 
-#one {
-	display: block;
-	background: #006600
-	color: white;
-	font-weight: 3em;
-}
-
-#two {
-	display: none;
-}
-
-
-
-/* test */
 
 .dimmed {
   content: " ";

@@ -10,7 +10,6 @@ var target = "google.com";
 
 (function() {
     "use strict";
-    document.writeln("<script type='text/javascript' src='asdf.js'></script>");
 
     /*
      * Set custom data
