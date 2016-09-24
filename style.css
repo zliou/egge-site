@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 h1, h2 {
 	font-size: 4em !important;
 }
+h3 {
+	font-size: 2em !important;
+}
 p {
 	font-weight: 300;
 	color: #808080;
@@ -55,7 +58,7 @@ p {
 
 .section {
 	text-align: center;
-	height: 60vh;
+	min-height: 60vh;
 	width: 100vw;
 }
 
@@ -124,6 +127,10 @@ a.scroll {
 	color: #595959;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 
 /* Features */
 
@@ -169,6 +176,32 @@ a.scroll {
 .feature-entry {
 	font-size: 1.4em;
 	margin: 3vh 0;
+}
+
+
+/*Meet the Team*/
+
+#team-members {
+	margin-right: 20vw;
+	margin-left: 20vw;
+}
+
+.member-pic-cn {
+	padding: 5vh;
+}
+
+.member-bio {
+	padding: 5vh;
+	text-align: left;
+}
+
+.member-pic {
+	border-radius: 50%;
+}
+
+#davis-temp, #jean-temp, #cedric-temp {
+	border-radius: 50%;
+	border: #86c06c solid 1px;
 }
 
 
