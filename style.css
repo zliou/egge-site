@@ -199,7 +199,7 @@ a.scroll {
 	border-radius: 50%;
 }
 
-#davis-temp, #jean-temp, #cedric-temp {
+.temp {
 	border-radius: 50%;
 	border: #86c06c solid 1px;
 }
