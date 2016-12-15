@@ -132,6 +132,18 @@ a.scroll {
 }
 
 
+/* Accolades */
+#accolades {
+	min-height: 100px;
+	margin-top: 5vh;
+	margin-bottom: 2vh;
+}
+
+#basement-logo {
+	margin-top: 40px;
+}
+
+
 /* Features */
 
 #features {
