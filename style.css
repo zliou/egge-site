@@ -243,7 +243,8 @@ a.scroll {
 /* Contact */
 
 #contact {
-	height: 30vh;
+	height: 200px;
+	background-color: #efefef;
 }
 
 #contact-header {
