@@ -70,13 +70,11 @@ p {
 
 
 #fold {
-
 	display: flex;
 	align-items: center;
 	text-align: center;
-	justify-content: center;
-	/*margin-top: 5vh;*/
-	height: 60vh;
+	justify-content: center;;
+
 	background: #86c06c radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%);
 }
 
@@ -85,11 +83,7 @@ p {
 	font-family: "Satisfy", cursive;
 	font-size: 7em;
 	font-weight: normal;
-	/*position: absolute;
-	top: 30%;
-	transform: translateY(-50%);*/
 }
-
 
 .banner-container {
 	display: inline-block;
@@ -161,8 +155,8 @@ a.scroll {
 /* Accolades */
 #accolades {
 	min-height: 100px;
-	margin-top: 5vh;
-	margin-bottom: 2vh;
+	margin-top: 1vh;
+	margin-bottom: 5vh;
 }
 
 #basement-logo {
