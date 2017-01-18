@@ -59,7 +59,7 @@ p {
 .section {
 	text-align: center;
 	min-height: 60vh;
-	width: 100vw;
+	width: 100%;
 }
 
 
@@ -90,8 +90,30 @@ p {
 }
 
 
+#tryit-cn {
+	position: absolute;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -100px;
+}
+
+#tryit {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.8em;
+/*	width: 100px; 
+	height: 100px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border-radius: 50px;*/
+
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+
+}
 
 
+/*
 #app-icon {
 	float: left;
 	max-width: 15vw;
@@ -148,6 +170,7 @@ a.scroll {
 .img-circle {
     border-radius: 50%;
 }
+*/
 
 
 .badges {
@@ -241,6 +264,10 @@ a.scroll {
 	margin-top: 5vh;
 }
 
+#team-header {
+	font-family: "Satisfy", cursive;
+}
+
 #team-members {
 	margin-right: 20vw;
 	margin-left: 20vw;
@@ -274,7 +301,7 @@ a.scroll {
 
 #contact-header {
 	padding-top: 5vh;
-	padding-bottom: 3vh;
+	/*padding-bottom: 3vh;*/
 }
 
 
