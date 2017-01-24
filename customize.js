@@ -10,7 +10,6 @@ var target = "google.com";
 
 (function() {
     "use strict";
-    document.writeln("<script type='text/javascript' src='asdf.js'></script>");
 
     /*
      * Set custom data
@@ -34,7 +33,7 @@ var target = "google.com";
             "Push notifications.",
         ],
         "email": "support@eggeapp.com",
-        "phone": "858-585-8585",
+        "phone": "(626) 214-8668",
         "icon": "egge.png",
     };
 
