@@ -84,6 +84,15 @@ p {
 	font-weight: normal;
 }
 
+#video {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#video-title {
+	font-family: "Satisfy", cursive;
+}
+
 .banner-container {
 	display: inline-block;
 }
@@ -103,6 +112,7 @@ p {
 	width: 250px;
 	height: 50px;
 	border-radius: 10px;
+
 }
 
 
