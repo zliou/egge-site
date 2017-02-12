@@ -266,38 +266,6 @@ a.scroll {
 }
 
 
-/* Recruitment */
-
-#recruit {
-	background: #efefef;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	min-height: 0;
-}
-
-#recruit-header {
-	font-family: "Satisfy", cursive;
-}
-
-.posting-cn {
-	margin: 3vh 20vw;
-	text-align: left;
-}
-
-.posting-position {
-	margin-top: 2vh; 
-}
-
-#resume-to {
-	color: black;
-	font-size: 1.5em;
-}
-
-#resume-email {
-	color: green;
-}
-
-
 
 
 /* Features */
