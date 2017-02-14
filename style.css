@@ -314,6 +314,16 @@ a.scroll {
 	margin: 3vh 0;
 }
 
+.feature-screenshot {
+    width:  900px;
+    height: 900px;
+    margin-right: -180px;
+    margin-left: 0px;
+}
+
+#alt-feature {
+    background-color: #efefef;
+}
 
 /*Meet the Team*/
 
