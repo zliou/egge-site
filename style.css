@@ -324,7 +324,7 @@ a.scroll {
     width:  900px;
     height: 900px;
     margin-top: -900px;
-    margin-right: -100px;
+    margin-left: -180px;
 }
 
 #alt-feature {
@@ -339,7 +339,7 @@ a.scroll {
 .alt-feature-description {
     padding-top: 300px;
     padding-bottom: 500px;
-    padding-left: 350px;
+    padding-left: 300px;
     
 }
 
