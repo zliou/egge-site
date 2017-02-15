@@ -318,11 +318,29 @@ a.scroll {
     width:  900px;
     height: 900px;
     margin-right: -180px;
-    margin-left: 0px;
+}
+
+.alt-feature-screenshot {
+    width:  900px;
+    height: 900px;
+    margin-top: -900px;
+    margin-right: -100px;
 }
 
 #alt-feature {
     background-color: #efefef;
+}
+
+.feature-description{
+    padding-top: 300px;
+    padding-bottom: 500px;
+}
+
+.alt-feature-description {
+    padding-top: 300px;
+    padding-bottom: 500px;
+    padding-left: 350px;
+    
 }
 
 /*Meet the Team*/
