@@ -341,7 +341,8 @@ a.scroll {
 .alt-feature-description {
     padding-top: 300px;
     padding-bottom: 500px;
-    padding-left: 500px;
+    padding-right: 550px;
+    text-align: right;
     
 }
 
