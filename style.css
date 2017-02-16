@@ -318,6 +318,7 @@ a.scroll {
     width:  900px;
     height: 900px;
     margin-right: -180px;
+    margin-left: -160px;
 }
 
 .alt-feature-screenshot {
@@ -325,6 +326,7 @@ a.scroll {
     height: 900px;
     margin-top: -900px;
     margin-left: -180px;
+    margin-right: -200px;
 }
 
 #alt-feature {
@@ -339,7 +341,7 @@ a.scroll {
 .alt-feature-description {
     padding-top: 300px;
     padding-bottom: 500px;
-    padding-left: 350px;
+    padding-left: 500px;
     
 }
 
