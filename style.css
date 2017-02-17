@@ -222,6 +222,7 @@ a.scroll {
 
 #events-title {
 	font-family: "Satisfy", cursive;
+    margin-top: 150px;
 }
 
 #events-images {
@@ -315,36 +316,71 @@ a.scroll {
 }
 
 .feature-screenshot {
-    width:  900px;
-    height: 900px;
-    margin-right: -180px;
+    width:  750px;
+    height: 750px;
+    margin-right: -200px;
     margin-left: -160px;
 }
 
 .alt-feature-screenshot {
-    width:  900px;
-    height: 900px;
-    margin-top: -900px;
+    width:  750px;
+    height: 750px;
+    margin-top: -530px;
     margin-left: -180px;
     margin-right: -200px;
 }
 
 #alt-feature {
-    background-color: #efefef;
+    /* background-color: #efefef; */
 }
 
 .feature-description{
-    padding-top: 300px;
+    padding-top: 50px;
     padding-bottom: 500px;
 }
 
 .alt-feature-description {
-    padding-top: 300px;
-    padding-bottom: 500px;
-    padding-right: 550px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 350px;
+    margin-top: -550px;
     text-align: right;
     
 }
+
+.feature-screenshot-bottom {
+    width:  750px;
+    height: 750px;
+    margin-top: 200px;
+    margin-left: -550px;
+    margin-right: -200px;
+}
+
+.alt-feature-screenshot-bottom {
+    width:  750px;
+    height: 750px;
+    margin-top: -580px;
+    margin-left: -180px;
+    margin-right: -200px;
+    margin-bottom: 500px;
+}
+
+.feature-description-bottom {
+    padding-top: 250px;
+    padding-bottom: 500px;
+    margin-left: -100px;
+}
+
+.alt-feature-description-bottom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 350px;
+    margin-top: -500px;
+    text-align: right;
+    
+}
+
+
 
 /*Meet the Team*/
 
