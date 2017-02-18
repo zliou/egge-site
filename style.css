@@ -319,15 +319,15 @@ a.scroll {
     width:  750px;
     height: 750px;
     margin-right: -200px;
-    margin-left: -160px;
+    margin-left: -100px;
 }
 
 .alt-feature-screenshot {
     width:  750px;
     height: 750px;
     margin-top: -530px;
-    margin-left: -180px;
-    margin-right: -200px;
+    margin-left: -100px;
+    margin-right: -130px;
 }
 
 #alt-feature {
@@ -342,7 +342,7 @@ a.scroll {
 .alt-feature-description {
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 350px;
+    padding-right: 425px;
     margin-top: -550px;
     text-align: right;
     
@@ -361,20 +361,20 @@ a.scroll {
     height: 750px;
     margin-top: -580px;
     margin-left: -180px;
-    margin-right: -200px;
+    margin-right: -130px;
     margin-bottom: 500px;
 }
 
 .feature-description-bottom {
     padding-top: 250px;
     padding-bottom: 500px;
-    margin-left: -100px;
+    margin-left: 0px;
 }
 
 .alt-feature-description-bottom {
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 350px;
+    padding-right: 430px;
     margin-top: -500px;
     text-align: right;
     
