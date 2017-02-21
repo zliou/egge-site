@@ -380,6 +380,14 @@ a.scroll {
     
 }
 
+#feature-heading {
+    font-family: "Satisfy", cursive;
+    padding-top: 50px;
+    font-size: 4em;
+    margin-bottom: -25px;
+}
+
+
 
 
 /*Meet the Team*/
