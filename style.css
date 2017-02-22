@@ -222,6 +222,7 @@ a.scroll {
 
 #events-title {
 	font-family: "Satisfy", cursive;
+    margin-top: 225px;
 }
 
 #events-images {
@@ -313,6 +314,80 @@ a.scroll {
 	font-size: 1.4em;
 	margin: 3vh 0;
 }
+
+.feature-screenshot {
+    width:  332px;
+    height: 676.25px;
+    padding-left: 75px;
+    padding-top: 57px;
+    margin-right: 25px;
+}
+
+.alt-feature-screenshot {
+    width:  332px;
+    height: 676.25px;
+    padding-right: 75px;
+    margin-top: -500px;
+}
+
+#alt-feature {
+    /* background-color: #efefef; */
+}
+
+.feature-description{
+    padding-top: 50px;
+    padding-bottom: 500px;
+}
+
+.alt-feature-description {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 425px;
+    margin-top: -675px;
+    text-align: right;
+    
+}
+
+.feature-screenshot-bottom {
+    width:  332px;
+    height: 676.25px;
+    margin-left: -400px;
+    padding-top: 300px;
+    padding-left: 40px;
+    margin-right: 30px;
+}
+
+.alt-feature-screenshot-bottom {
+    width:  332px;
+    height: 676.25px;
+    margin-top: -500px;
+    padding-right: 75px;
+}
+
+
+.feature-description-bottom {
+    padding-top: 250px;
+    padding-bottom: 500px;
+    margin-left: 0px;
+}
+
+.alt-feature-description-bottom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 430px;
+    margin-top: -630px;
+    text-align: right;
+    
+}
+
+#feature-heading {
+    font-family: "Satisfy", cursive;
+    padding-top: 50px;
+    font-size: 4em;
+    margin-bottom: -25px;
+}
+
+
 
 
 /*Meet the Team*/
