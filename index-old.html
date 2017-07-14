@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="page-title">Home</title>
+	<meta charset="utf-8"/>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!--JQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script> 
+
+	<!--animate-->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+	<!--end-animate-->
+
+	<!-- start-smooth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!--//end-smooth-scrolling-->
+
+</head>
+<body id="lorem">
+		
+		<!-- 
+		<div class="section" id="fold">
+
+			<div class="banner-container wow fadeInUp animated">
+				<img id="app-icon"/>
+				<div class="name-container">
+					<h1 class="app"></h1>
+					<h5 class="author" id="author"></h5>
+				</div>	
+			</div>
+
+			<div class="compliments wow fadeInUp animated" data-wow-delay=".2s">
+				<p id="slogan"></p>
+			</div>
+
+			<div class="top-nav">
+				<ul class="nav1">
+					<li class="wow fadeInLeft animated menu" data-wow-delay=".5s">
+						<a href="#fold" class="scroll">Home</a>
+					</li>
+					<li class="wow fadeInLeft animated menu" data-wow-delay=".3s">
+						<a href="#features" class="scroll">Features</a>
+					</li>
+					<li class="wow fadeInRight animated menu" data-wow-delay=".5s">
+						<a href="#contact" class="scroll">Contact Us</a>
+					</li>
+					<li class="wow fadeInRight animated menu" data-wow-delay=".3s">
+						<a href="#tryit">Try it now!</a>
+					</li>
+				</ul>
+
+		</div> 
+		-->		
+
+		<div class="section" id="fold">
+			<h1 id="title">
+				Egge
+			</h1>
+		</div>
+
+		<div id="tryit-cn">
+			<a href="http://app.eggeapp.com">
+				<button id="tryit">
+					Try Egge<sup>LITE</sup> now!
+				</button>
+			</a>
+		</div>
+
+
+
+		<div class="section" id="accolades">
+			<div id="basement-accolade">
+				<img src="images/basement.jpg" id="basement-logo"/>
+				<p>Proudly accelerated by the Basement at UC San Diego!</p>
+			</div>
+			<div class="badges">
+				<p>Coming soon to</p>
+				<img id="gp-badge"  
+					src="images/google_play_badge.png"
+					onclick="alert('Coming soon!')"/>
+				<img id="as-badge" 
+					src="images/app_store_badge.svg"
+					onclick="alert('Coming soon!')"/>
+			</div>
+		</div>
+
+		<div class="section" id="video">
+			<h1 id="video-title">
+				Check this video out!
+			</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/7e0XGdh4pr0" frameborder="0" allowfullscreen></iframe>
+		</div>
+    
+		<!--><!-->
+			<h2 id="feature-heading" align="center">-   Features   -</h2>
+			
+		<div>
+			<img src="images/event-creation-cropped.png" class="feature-screenshot" align="left">
+			<div class="feature-description">
+			<h2 id="events-title">Spontaneous</h2>
+			<p class="posting">Create an event in less than ten seconds!</p>
+		    </div>
+		</div>
+		
+		<div>
+			<div class="alt-feature-description">
+			<h2 id="events-title">Visual</h2>
+			<p class="posting">See what's going on around you!</p>
+		    </div>	
+			<img src="images/events-map-cropped.png" class="alt-feature-screenshot" align="right">
+		</div>
+		
+		<div id="alt-feature">
+		<div>
+			<img src="images/event-login-cropped.png" class="feature-screenshot-bottom" align="left">
+			<div class="feature-description-bottom">
+			<h2 id="events-title">Streamlined</h2>
+			<p class="posting"> Integrated with Facebook Login.</p>
+		    </div>
+		</div>
+			
+		<div id="alt-feature">
+			<div class="alt-feature-description-bottom">
+			<h2 id="events-title">Connected</h2>
+			<p class="posting">See what your friends are up to!</p>
+		    </div>
+			<img src="images/event-feed-cropped.png" class="alt-feature-screenshot-bottom" align="right">
+		</div>
+	    </div>
+	    <!--><!-->
+        
+		<div class="section" id="events">
+            <h2 id="events-title">Events we're Attending!</h2>
+            
+            <div id="events-images">
+                <img src="images/SDconvergence.jpg" id="events-img">
+                <img src="images/EntrepreneurChallenge.png" id="events-img">
+                <img src="images/StartupGrind.png" id="events-img">
+                <img src="images/Igniteucsd.png" id="events-img">
+            </div>
+            
+        </div>
+
+		<div class="section" id="recruit">
+			<h2 id="recruit-header">We're Hiring!</h2>
+			
+			<div class="posting-cn">
+			
+				<h3 class="posting-position">Software Engineers</h3>
+				<p class="posting">
+					We're looking for software engineers who are experienced with JavaScript--particularly with AngularJS and Node.js. We're also looking for experience with Android and iOS development.
+				</p>
+					
+				<h3 class="posting-position">Business Developers</h3>
+				<p class="posting">
+					We're seeking individuals who have experience in startups or other organizations and possess skills in marketing. We're searching for strong-willed people who are familiar with raising funds - particularly nondilutive funds.
+				</p>
+			
+			</div>
+
+			<p id="resume-to">
+				Send your resume to <a style="color: green; text-decoration: none;" href="mailto:developer@eggeapp.com">developer@eggeapp.com</a>
+			</p>
+
+		</div>
+
+      
+	<!-- 	<div class="section" id="features">
+
+			<div id="triangle"></div>
+			
+			<h2 id="features-header"
+				class="wow fadeInDown animated" 
+				data-wow-delay=".7s">
+				Features
+			</h2>
+
+			<div id="features-container" class="wow fadeInUp animated" data-wow-delay=".9s">
+				<table>
+					<tr>
+						<td class="feature-text"></td>
+						<td class="feature-image-container">
+							<div class="triangle-right"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="feature-image-container">
+							<div class="triangle-left"></div>
+						</td>
+						<td class="feature-text"></td>
+					</tr>
+					<tr>
+						<td class="feature-text"></td>
+						<td class="feature-image-container">
+							<div class="triangle-right"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+		</div> -->
+
+		<div class="section" id="team">
+
+			<!-- <div id="triangle2"></div> -->
+
+			<h2 id="team-header">
+				Meet the Team
+			</h2>
+			<table id="team-members">
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/justin.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Justin Feng</h3>
+						<h4>CEO, Co-Founder</h4>
+						<p>
+							In addition to acting as Egge's scrum master, Justin is responsible for developing long term strategies, creating algorithms, fostering business and organizational partnerships, training developers, mentoring team members, and providing food for hungry programmers. 
+						</p>
+
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/zach.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Zach Liou</h3>
+						<h4>CTO, Co-Founder</h4>
+						<p>
+							As a hungry programmer, Zach is responsible for UI/UX, backend troubleshooting, future ML API integration, and everything in between--as long as food is involved.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/davis.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Davis Cho</h3>
+						<h4>Backend Engineer</h4>
+						<p>
+							Davis is responsible for everything that happens behind the scenes. Logging in, finding your events, and seeing your friends are all in his domain.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/omid.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Omid Azizi</h3>
+						<h4>Business Development</h4>
+						<p>
+							Omid leads Egge's business development. He oversees the day to day operations, sets immediate goals for the company, and works in conjunction with the marketing and development teams to expand and improve Egge.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/jean.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Jean Ratanaphaithun</h3>
+						<h4>Marketing Lead</h4>
+						<p>
+							Jean is in charge of developing marketing strategies to help inform the direction of the team by utilizing user feedback, product testing, and focus group interviews.
+						</p>
+					</td>
+				</tr>
+                <tr class="team-member">
+					<td class="member-pic-cn">
+						<img height=250 width=250 src="images/jamie.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Jamie Lee</h3>
+						<h4>Community Outreach and User Experience</h4>
+						<p>
+                        				Jamie reaches out to partner organizations, and is our resident product evangelist. She'll do anything for Egge ... and dogs.
+						</p>
+					</td>
+				</tr>
+                <tr class="team-member">
+					<td class="member-pic-cn">
+						<img height=250 width=250 src="images/will.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>William Yu</h3>
+						<h4>Full-Stack Engineer</h4>
+						<p>
+                            Will is a junior developer at Egge and is
+                            responsible for troubleshooting bugs and
+                            transforming user feedback into usable modules.
+                        </p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/temp.png" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Howard Fu</h3>
+						<h4>Database Specialist</h4>
+						<p>
+							Howard has moved on to bigger and better things. But, during his time with Egge, he was responsible for database optimization.
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="section" id="contact">
+			
+			<h2 id="contact-header">Contact</h2>
+			
+			<h4>support@eggeapp.com</h4>
+			<h4>(626) 214 - 8668</h4>
+
+		</div>
+
+</body>
+
+<script type="text/javascript" src="customize.js"></script>
+
+</html>

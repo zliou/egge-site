@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id="page-title">Egge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){    window.scrollTo(0,1); } </script>
+
+  <!--JQuery -->
+  <script src="js/jquery-1.11.1.min.js"></script> 
+
+  <!--animate-->
+  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/wow.min.js"></script>
+  <script>
+   	 new WOW().init();
+  </script>
+  <!--end-animate-->
+
+  <!-- start-smooth-scrolling-->
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>	
+  <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+  </script>
+  <!--//end-smooth-scrolling-->
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Egge</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+			<li class="active"><a href="team.html">Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<br><br>
+    <div class="container">
+		<div class="section" id="team">
+
+			<!-- <div id="triangle2"></div> -->
+
+			<h2 id="team-header">
+				Meet the Team
+			</h2>
+			<table id="team-members">
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/justin.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Justin Feng</h3>
+						<h4>CEO, Co-Founder</h4>
+						<p>
+							In addition to acting as Egge's scrum master, Justin is responsible for developing long term strategies, creating algorithms, fostering business and organizational partnerships, training developers, mentoring team members, and providing food for hungry programmers. 
+						</p>
+
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/zach.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Zach Liou</h3>
+						<h4>CTO, Co-Founder</h4>
+						<p>
+							As a hungry programmer, Zach is responsible for UI/UX, backend troubleshooting, future ML API integration, and everything in between--as long as food is involved.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/davis.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Davis Cho</h3>
+						<h4>Backend Engineer</h4>
+						<p>
+							Davis is responsible for everything that happens behind the scenes. Logging in, finding your events, and seeing your friends are all in his domain.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/omid.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Omid Azizi</h3>
+						<h4>Business Development</h4>
+						<p>
+							Omid leads Egge's business development. He oversees the day to day operations, sets immediate goals for the company, and works in conjunction with the marketing and development teams to expand and improve Egge.
+						</p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/jean.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Jean Ratanaphaithun</h3>
+						<h4>Marketing Lead</h4>
+						<p>
+							Jean is in charge of developing marketing strategies to help inform the direction of the team by utilizing user feedback, product testing, and focus group interviews.
+						</p>
+					</td>
+				</tr>
+                <tr class="team-member">
+					<td class="member-pic-cn">
+						<img height=250 width=250 src="images/jamie.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Jamie Lee</h3>
+						<h4>Community Outreach and User Experience</h4>
+						<p>
+                        				Jamie reaches out to partner organizations, and is our resident product evangelist. She'll do anything for Egge ... and dogs.
+						</p>
+					</td>
+				</tr>
+                <tr class="team-member">
+					<td class="member-pic-cn">
+						<img height=250 width=250 src="images/will.jpg" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>William Yu</h3>
+						<h4>Full-Stack Engineer</h4>
+						<p>
+                            Will is a junior developer at Egge and is
+                            responsible for troubleshooting bugs and
+                            transforming user feedback into usable modules.
+                        </p>
+					</td>
+				</tr>
+				<tr class="team-member">
+					<td class="member-pic-cn">
+						<img src="images/temp.png" class="member-pic">
+					</td>
+					<td class="member-bio">
+						<h3>Howard Fu</h3>
+						<h4>Database Specialist</h4>
+						<p>
+							Howard has moved on to bigger and better things. But, during his time with Egge, he was responsible for database optimization.
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	    </div>
+	    <!--><!-->
+	
+	</div>
+      <!-- /.container -->
+
+	
+	<br>
+
+  <div class="container">
+	<hr>
+      <footer>
+        <p>&copy; 2017</p>
+      </footer>
+  </div>
+	  
+</body>
+</html>
